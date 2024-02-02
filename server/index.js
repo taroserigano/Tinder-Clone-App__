@@ -45,17 +45,13 @@ console.log(importMetaUrl)
 
 
 const app = express()
-app.use(cors())
-app.use(express.json())
 
 app.use(express.static(path.resolve(__dirname, './client/build')));
 
-// only when ready to deploy
-app.get('*', (req, res) => {
-    res.sendFile(path.resolve(dirname, './client/build', 'index.html'));
-  });
 
 
+  app.use(express.json())
+  
 
 // Default
 app.get('/', (req, res) => {
@@ -294,5 +290,9 @@ app.post('/message', async (req, res) => {
     }
 })
 
+// only when ready to deploy
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(dirname, './client/build', 'index.html'));
+  });
 
 app.listen(PORT, () => console.log('server running on PORT ' + PORT))
