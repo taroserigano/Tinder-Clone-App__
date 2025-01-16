@@ -26,7 +26,7 @@ Let's swipe!
 
 ![alt text](https://github.com/taroserigano/Tinder-Clone-App/blob/main/images/swiperight.png)
 
-Once matched, you can start chatting! 😉
+Once matched, you can start chatting! 
 
 ![alt text](https://github.com/taroserigano/Tinder-Clone-App/blob/main/images/chat.png)
 
